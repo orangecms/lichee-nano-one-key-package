@@ -30,10 +30,10 @@
     pinctrl-0 = <&spi0_pins_a>;
     status = "okay";
     spi-max-frequency = <50000000>;
-    flash: w25q128@0 {
+    flash: xt25f128@0 {
         #address-cells = <1>;
         #size-cells = <1>;
-        compatible = "winbond,w25q128", "jedec,spi-nor";
+        compatible = "winbond,xt25f128", "jedec,spi-nor";
         reg = <0>;
         spi-max-frequency = <50000000>;
         partitions {
